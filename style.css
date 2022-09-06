@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header img{
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+.photo img{
+     max-width: 100%;
+    height: auto; 
+    /* margin-left: 25px;
+    margin-top: 15px; */
+}
+main{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.register{
+    padding: 10px;
+    border-style: none;
+    width: 130px;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+    transition: all ease-out 400ms;
+}
+
+.register:hover{
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: white;
+}
+
+.content{
+    line-height: 2;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content h3{
+    color: white;
+    font: 800 1.5rem Poppins, sans-serif;
+    line-height: 1.5;
+    margin-top: 45px;
+}
+
+.content p{
+    color: white;
+    font: 1rem Open Sans, sans-serif;
+}
+
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+ul li{
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    transition: ease-out 400ms;
+}
+
+ul li:hover{
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+ul li i{
+    color: white;
+}
+ul li i:hover{
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    .photo{
+        background-size: auto;
+        margin-bottom: 5px;
+    }
+
+    .content{
+        text-align: center;
+    }
+
+    ul{
+        justify-content: center;
+    }
+
+    header img{
+        width: 200px;
+    }
+    
+}
